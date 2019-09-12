@@ -1,0 +1,75 @@
+%\documentclass[12pt,a4paper]{report}
+\documentclass[12pt,a4paper]{article}
+\usepackage{epsfig,subfigure,multirow}
+%\usepackage{src/fancyheadings,calc}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{pstricks,pst-node,pst-tree}
+\usepackage{soul}
+
+\normalsize
+%% \renewcommand{\baselinestretch}{1.5}
+%% \setlength{\hoffset}{-1in} \setlength{\voffset}{-1.2in}
+%% \setlength{\headheight}{2\baselineskip}
+%% \setlength{\topmargin}{(1in-\headheight)/2}
+%% \setlength{\headsep}{\topmargin} \setlength{\oddsidemargin}{4cm}
+%% \setlength{\marginparwidth}{2.5cm} \setlength{\marginparsep}{8pt}
+%% \setlength{\textheight}{\baselineskip*46+\topskip}
+%% \setlength{\textwidth}{\paperwidth-\oddsidemargin-\marginparwidth-\marginparsep}
+%% \setlength{\footskip}{(\paperheight-\headheight-\topmargin-\headsep-\textheight)/2}
+%% \newpsobject{showgrid}{psgrid}{subgriddiv=1,griddots=10,gridlabels=6pt}
+
+\sloppy
+%% \pagestyle{empty} \headrulewidth 0.4pt \lhead[]{}
+%% \rhead[]{\textit{\nouppercase\leftmark}}
+
+%% \bibliographystyle{IEEEtran}
+
+\begin{document}
+
+% Front matter
+
+\pagenumbering{roman}
+
+%Title page
+\include{src/title}
+%\maketitle
+
+\pagestyle{plain}
+\setcounter{page}{2}
+
+%% % Dedication
+%% \include{Dedication}
+%% 
+%% % Acknowledgements
+%% \include{Acknowledgements}
+%% 
+%% % Abstract
+%% \include{Abstract}
+\newpage
+%% \chapter*{}
+
+\tableofcontents
+
+%% \listoftables
+%% 
+%% \listoffigures
+
+% Body of the document
+
+\clearpage
+%% \pagestyle{fancy}
+\pagenumbering{arabic}
+
+% Chapter 1. Introduction
+\include{src/tense}
+
+
+
+
+\pagestyle{plain}
+
+
+% Bibliography
+\bibliography{thesis_bib}
+
+\end{document}
