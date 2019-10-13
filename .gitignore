@@ -1,1 +1,4 @@
-notes.pdf
+*.aux
+*.log
+notes.out
+notes.toc
